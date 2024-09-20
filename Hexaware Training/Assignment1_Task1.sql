@@ -2,9 +2,11 @@ CREATE DATABASE Techshop;
 CREATE TABLE Customers (
     CustomerId INT PRIMARY KEY,          
     CustomerName VARCHAR(100) NOT NULL,  
-    Email VARCHAR(100),           
+    ContactEmail VARCHAR(100),           
     ContactPhone VARCHAR(20),            
-    CustAddress VARCHAR(255),                                  
+    CustAddress VARCHAR(255),  
+    City VARCHAR(100),
+    Country VARCHAR(100)
 );
 CREATE TABLE Products (
     ProductId INT PRIMARY KEY,           
